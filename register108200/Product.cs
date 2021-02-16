@@ -9,7 +9,7 @@ namespace register108200
         public string Name { get; set; }
         public string Unit { get; set; }
         public int Price { get; set; }
-        public int VAT { get; set; }
+        public double VAT { get; set; }
         public string Barcode { get; set; }
 
     }

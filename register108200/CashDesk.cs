@@ -31,7 +31,7 @@ namespace register108200
                 Name = "Kompot z jaszczura",
                 Unit = "l",
                 Price = 5,
-                VAT = 8,
+                VAT = 0.08,
                 Barcode = "0001"
             };
             Items.Add(p);
@@ -40,8 +40,8 @@ namespace register108200
             {
                 Name = "Pierogi z węża",
                 Unit = "kg",
-                Price = 6,
-                VAT = 8,
+                Price = 10,
+                VAT = 0.23,
                 Barcode = "0010"
             };
             Items.Add(o);
@@ -51,7 +51,7 @@ namespace register108200
                 Name = "Kanapka z wilka",
                 Unit = "szt",
                 Price = 8,
-                VAT = 8,
+                VAT = 0.08,
                 Barcode = "0011"
             };
             Items.Add(i);

@@ -70,14 +70,42 @@ namespace register108200
 
                     W("Bierzesz coś jeszcze...?");
                     W("2. Tak.");
-                    W("0. Nie, już mi styknie.");
+                    W("3. Nie, już mi styknie.");
                     ans = Console.ReadLine();
                     Console.WriteLine();
 
                 };
+
+                while (ans == "3")
+                {
+
+                    double vat8 = 0;
+                    double vat23 = 0;
+                    foreach (CartItem a in cashDesk.Cart.cartItems)
+                    {
+                        if (a.Product.VAT.Equals(0.08))
+                            vat8 += a.Product.VAT * a.Product.Price * a.Quantity;
+                        if (a.Product.VAT.Equals(0.23))
+                            vat23 += a.Product.VAT * a.Product.Price * a.Quantity;
+                        // Console.WriteLine("{0} {1} {2} {3} {4}", s.Name, s.Price, s.Price, s.Price, s.Price);
+                        //Console.WriteLine($"{a.Product.Name} - {a.Quantity}{a.Product.Unit} ");
+                    }
+
+                    Console.ReadLine();
+                    Console.WriteLine($"VAT 8 : {vat8}");
+                    Console.WriteLine($"VAT 23 : {vat23}");
+                    Console.ReadLine();
+
+                };
+
             };
-  
+
+
+
         }
+
+
+
 
 
         static void W(string tekst)
