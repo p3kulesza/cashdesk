@@ -70,7 +70,7 @@
     "Barcode": "1010"
   },
   {
-    "Name": "Dżem z cebuli",
+    "Name": "Dżemik z cebuli",
     "Unit": "słoik",
     "Price": 10,
     "VAT": 0.08,
@@ -91,7 +91,7 @@
     "Barcode": "1101"
   },
   {
-    "Name": "Mrożony rostbef",
+    "Name": "Rostbef mrożony",
     "Unit": "kg",
     "Price": 30,
     "VAT": 0.08,
@@ -133,14 +133,14 @@
     "Barcode": "2222"
   },
   {
-    "Name": "Papierosy spod lady",
+    "Name": "Fajki spod lady",
     "Unit": "szt",
     "Price": 10,
     "VAT": 0.23,
     "Barcode": "2221"
   },
   {
-    "Name": "Wódka z Finlandii",
+    "Name": "Wódka z Estonii",
     "Unit": "szt",
     "Price": 35,
     "VAT": 0.23,
