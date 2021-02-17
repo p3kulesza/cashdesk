@@ -1,0 +1,208 @@
+﻿[
+  {
+    "Name": "Kompot z jaszczura",
+    "Unit": "l",
+    "Price": 5,
+    "VAT": 0.08,
+    "Barcode": "0000"
+  },
+  {
+    "Name": "Pierogi z węża",
+    "Unit": "kg",
+    "Price": 10,
+    "VAT": 0.23,
+    "Barcode": "0001"
+  },
+  {
+    "Name": "Mięso pieczone",
+    "Unit": "kg",
+    "Price": 12,
+    "VAT": 0.08,
+    "Barcode": "0010"
+  },
+  {
+    "Name": "Gulasz ognisty",
+    "Unit": "szt",
+    "Price": 15,
+    "VAT": 0.08,
+    "Barcode": "0100"
+  },
+  {
+    "Name": "Pyszna kapusta",
+    "Unit": "szt",
+    "Price": 3,
+    "VAT": 0.08,
+    "Barcode": "0101"
+  },
+  {
+    "Name": "Potrawka z chrząszcza",
+    "Unit": "szt",
+    "Price": 17,
+    "VAT": 0.08,
+    "Barcode": "0110"
+  },
+  {
+    "Name": "Kanapka z wilka",
+    "Unit": "szt",
+    "Price": 7,
+    "VAT": 0.08,
+    "Barcode": "0111"
+  },
+  {
+    "Name": "Pasztet z goblina",
+    "Unit": "l",
+    "Price": 5,
+    "VAT": 0.08,
+    "Barcode": "1000"
+  },
+  {
+    "Name": "Krzywe buraki",
+    "Unit": "kg",
+    "Price": 3,
+    "VAT": 0.08,
+    "Barcode": "1001"
+  },
+  {
+    "Name": "Kiełki ziemniaków",
+    "Unit": "kg",
+    "Price": 13,
+    "VAT": 0.08,
+    "Barcode": "1010"
+  },
+  {
+    "Name": "Dżem z cebuli",
+    "Unit": "słoik",
+    "Price": 10,
+    "VAT": 0.08,
+    "Barcode": "1011"
+  },
+  {
+    "Name": "Kasza na gwoździu",
+    "Unit": "kg",
+    "Price": 2,
+    "VAT": 0.08,
+    "Barcode": "1100"
+  },
+  {
+    "Name": "Herbatka z mlecza",
+    "Unit": "pudełko",
+    "Price": 23,
+    "VAT": 0.08,
+    "Barcode": "1101"
+  },
+  {
+    "Name": "Mrożony rostbef",
+    "Unit": "kg",
+    "Price": 30,
+    "VAT": 0.08,
+    "Barcode": "1110"
+  },
+  {
+    "Name": "Wiaderko kawy",
+    "Unit": "wiaderko",
+    "Price": 15,
+    "VAT": 0.23,
+    "Barcode": "1111"
+  },
+  {
+    "Name": "Kotlet schabowy",
+    "Unit": "szt",
+    "Price": 7,
+    "VAT": 0.08,
+    "Barcode": "1112"
+  },
+  {
+    "Name": "Kiszone śledzie",
+    "Unit": "puszka",
+    "Price": 50,
+    "VAT": 0.08,
+    "Barcode": "1122"
+  },
+  {
+    "Name": "Udziec kojota",
+    "Unit": "szt",
+    "Price": 23,
+    "VAT": 0.08,
+    "Barcode": "1222"
+  },
+  {
+    "Name": "Prawy sierpowy",
+    "Unit": "szt",
+    "Price": 0,
+    "VAT": 0.23,
+    "Barcode": "2222"
+  },
+  {
+    "Name": "Papierosy spod lady",
+    "Unit": "szt",
+    "Price": 10,
+    "VAT": 0.23,
+    "Barcode": "2221"
+  },
+  {
+    "Name": "Wódka z Finlandii",
+    "Unit": "szt",
+    "Price": 35,
+    "VAT": 0.23,
+    "Barcode": "2211"
+  },
+  {
+    "Name": "Energetyk bezkofeinowy",
+    "Unit": "szt",
+    "Price": 4,
+    "VAT": 0.23,
+    "Barcode": "2111"
+  },
+  {
+    "Name": "Placki z pola",
+    "Unit": "szt",
+    "Price": 3,
+    "VAT": 0.23,
+    "Barcode": "2220"
+  },
+  {
+    "Name": "Rybne paluszki",
+    "Unit": "kg",
+    "Price": 15,
+    "VAT": 0.08,
+    "Barcode": "2200"
+  },
+  {
+    "Name": "Głowa jesiotra",
+    "Unit": "szt",
+    "Price": 35,
+    "VAT": 0.08,
+    "Barcode": "2000"
+  },
+  {
+    "Name": "Oscypek ze świstaka",
+    "Unit": "szt",
+    "Price": 200,
+    "VAT": 0.23,
+    "Barcode": "2022"
+  },
+  {
+    "Name": "Puszka fasoli",
+    "Unit": "szt",
+    "Price": 4,
+    "VAT": 0.08,
+    "Barcode": "2110"
+  },
+  {
+    "Name": "Flaczki z Bytomia",
+    "Unit": "kg",
+    "Price": 35,
+    "VAT": 0.08,
+    "Barcode": "2100"
+  },
+  {
+    "Name": "Mieszanka studencka",
+    "Unit": "kg",
+    "Price": 12,
+    "VAT": 0.08,
+    "Barcode": "9999"
+  }
+
+
+]
+

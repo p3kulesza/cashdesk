@@ -11,13 +11,10 @@ namespace register108200
             string ans = "0";
             CashDesk cashDesk = new CashDesk();
             Cart cart = new Cart();
-            //string barcode = "0001";
-            // Product p = cashDesk.Items.FirstOrDefault(x => x.Barcode == barcode);
-
+            Console.WriteLine("Witaj w moim sklepie.");
             while (ans == "0")
             {
-                Console.WriteLine();
-                W("Witaj w moim sklepie. Chcesz coś kupić? Czy może najpierw trochę się rozejrzeć?");
+                W("Chcesz coś kupić? Czy może trochę się rozejrzeć?");
                 W("1. Pokaż mi swoje towary.");
                 W("2. Chcę coś kupić.");
                 ans = Console.ReadLine();
@@ -25,26 +22,19 @@ namespace register108200
 
                 if (ans == "1")
                 {
-                    foreach (Product s in cashDesk.Items)
-                    {
-                        // Console.WriteLine("{0} {1} {2} {3} {4}", s.Name, s.Price, s.Price, s.Price, s.Price);
-                        Console.WriteLine($"{s.Name}, {s.Price} złoty {s.Unit}. Kod: {s.Barcode}");
-                    }
+                    ShowProducts(cashDesk);
                     ans = "0";
+                    Console.WriteLine();
                 };
 
                 while ((ans == "2") || (ans == "t"))
                 {
-                    //Console.WriteLine();
-                    W("Podaj mi kod a ja wrzucę produkt do koszyka.");
+                    Console.WriteLine("Podaj mi kod a ja wrzucę produkt do koszyka.");
                     ans = Console.ReadLine();
                     Console.WriteLine();
                     W("Ile tego?");
-
                     string squantity = Console.ReadLine();
                     int quantity = Convert.ToInt32(squantity);
-                    //Console.WriteLine(quantity);
-
                     Product p = cashDesk.Items.FirstOrDefault(x => x.Barcode == ans);
                     if (p != null)
                     {
@@ -58,10 +48,8 @@ namespace register108200
                     W("W twoim koszyku jest: ");
                     Console.WriteLine();
 
-                    foreach (CartItem a in cashDesk.Cart.cartItems)
-                    {
-                        Console.WriteLine($"{a.Product.Name} - {a.Quantity}{a.Product.Unit} ");
-                    }
+                    ShowCart(cashDesk);
+
                     Console.WriteLine();
                     W("Bierzesz coś jeszcze...?");
                     W("Tak! (t)");
@@ -90,10 +78,24 @@ namespace register108200
             Console.WriteLine();
             Console.WriteLine(tekst);
         }
+        static void ShowProducts(CashDesk cashDesk)
+        {
+            foreach (Product s in cashDesk.Items)
+            {
+                Console.WriteLine($"{s.Name}, {(s.Price + (s.VAT * s.Price)).ToString("0.00")} złoty {s.Unit}. Kod: {s.Barcode}");
+            }
+        }
+
+        static void ShowCart(CashDesk cashDesk)
+        {
+            foreach (CartItem a in cashDesk.Cart.cartItems)
+            {
+                Console.WriteLine($"{a.Product.Name} - {a.Quantity}{a.Product.Unit} ");
+            }
+        }
 
         static void ShowReceipt(CashDesk cashDesk)
         {
-            //Wyświetlanie paragonu
             Console.WriteLine("--------------------");
             Console.WriteLine();
             Console.WriteLine("Data sprzedaży: "); Console.WriteLine(DateTime.Now.ToString("M/d/yyyy"));
@@ -117,7 +119,7 @@ namespace register108200
             }
             Console.WriteLine("--------------------");
             Console.WriteLine();
-            Console.WriteLine($"Łącznie do zapłaty: {toPay.ToString("0.00")}");
+            Console.WriteLine($"Łącznie do zapłaty: {toPay.ToString("0.00")} PLN");
             Console.WriteLine();
             Console.WriteLine("W tym VAT: ");
             Console.WriteLine();
@@ -127,6 +129,5 @@ namespace register108200
             Console.WriteLine("--------------------");
             Console.ReadLine();
         }
-
     }
 }

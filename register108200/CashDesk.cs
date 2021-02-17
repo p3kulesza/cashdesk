@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
+
 
 namespace register108200
 {
@@ -26,35 +29,14 @@ namespace register108200
         {
             Items = new List<Product>();
 
-            Product p = new Product
-            {
-                Name = "Kompot z jaszczura",
-                Unit = "l",
-                Price = 5,
-                VAT = 0.08,
-                Barcode = "0001"
-            };
-            Items.Add(p);
+            // ustalamy ścieżkę do pliku pytania.json
+            string productsDir = $"{Directory.GetCurrentDirectory()}\\products.json";
 
-            Product o = new Product
-            {
-                Name = "Pierogi z węża",
-                Unit = "kg",
-                Price = 10,
-                VAT = 0.23,
-                Barcode = "0010"
-            };
-            Items.Add(o);
+            // czytamy (program czyta) zawartość pliku pytania.json i zapisuje cały tekst pliku w zmiennej tekstPliku
+            string fileTxt = File.ReadAllText(productsDir);
 
-            Product i = new Product
-            {
-                Name = "Kanapka z wilka",
-                Unit = "szt",
-                Price = 8,
-                VAT = 0.08,
-                Barcode = "0011"
-            };
-            Items.Add(i);
+            // zamieniamy tekst pliku na listę pytań (List<Pytanie>)
+            Items = JsonConvert.DeserializeObject<List<Product>>(fileTxt);
 
         }
 
