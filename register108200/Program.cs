@@ -15,19 +15,22 @@ namespace register108200
             while (ans == "0")
             {
                 W("Chcesz coś kupić? Czy może trochę się rozejrzeć?");
-                W("1. Pokaż mi swoje towary.");
-                W("2. Chcę coś kupić.");
+                W("Pokaż mi swoje towary. (p)");
+                W("Chcę coś kupić. (k)");
                 ans = Console.ReadLine();
                 Console.WriteLine();
-
-                if (ans == "1")
+                if (!(ans.Equals("p") || ans.Equals("k") || ans.Equals("t") || ans.Equals("n") || ans.Equals("0")))
+                {
+                    Console.WriteLine("Co? Gadaj do mnie normalnie.");
+                    ans = "0";
+                }
+                if (ans == "p")
                 {
                     ShowProducts(cashDesk);
                     ans = "0";
                     Console.WriteLine();
                 };
-
-                while ((ans == "2") || (ans == "t"))
+                while ((ans == "k") || (ans == "t"))
                 {
                     Console.WriteLine("Podaj mi kod a ja wrzucę produkt do koszyka.");
                     ans = Console.ReadLine();
@@ -51,7 +54,7 @@ namespace register108200
                     ShowCart(cashDesk);
 
                     Console.WriteLine();
-                    W("Bierzesz coś jeszcze...?");
+                    W("Podać coś...?");
                     W("Tak! (t)");
                     W("Nie, już mi styknie. Ile się należy? (n)");
                     ans = Console.ReadLine();
@@ -63,9 +66,7 @@ namespace register108200
                 {
                     ShowReceipt(cashDesk);
                 };
-
             };
-
         }
 
         static void W(string tekst)
